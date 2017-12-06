@@ -56,7 +56,7 @@ fi
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
-    PS1='\w$ '
+    PS1='zztian@\w$ '
     #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
@@ -125,26 +125,16 @@ fi
     ssh-add ~/.ssh/id_rsa
 #fi
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
-export JRE_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre/
-#export JAVA_HOME=/usr/java/jdk1.6.0_29/
-#export JRE_HOME=/usr/java/jdk1.6.0_29/jre/
 export LC_ALL=en_US.UTF-8 
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-#export http_proxy=10.0.2.99:3128
-#export https_proxy=10.0.2.99:3128
-
-export PYTHONPATH="$PYTHONPATH:."
-PERL5LIB="/home/likewise-open/SPREADTRUM/zhizhou.tian/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/likewise-open/SPREADTRUM/zhizhou.tian/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/likewise-open/SPREADTRUM/zhizhou.tian/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/likewise-open/SPREADTRUM/zhizhou.tian/perl5"; export PERL_MM_OPT;
-
-export PATH="/home/likewise-open/SPREADTRUM/zhizhou.tian/.wine/drive_c/Program Files (x86)/Source Insight 3":/home/likewise-open/SPREADTRUM/zhizhou.tian/workspace/Eclipse/adt-bundle-linux-x86_64-20130729/eclipse:/usr/lib/jvm/java-7-openjdk-amd64/bin/:~/workspace/bin:~/workspace/bin/slog_postprocess_for_6.0:~/workspace/sprdroid5.1_trunk_multios_jiaotu_dev/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-aarch64-linux-gnu-4.9/bin/:$PATH
-
-alias cdt='~/workspace/Eclipse/CDT-Indigo/eclipse/eclipse'
-alias adb='sudo /sbin/adb'
-alias vi=vim
-
+alias croot="cd /media/zhizhou/linux/"
+alias sshzz="ssh zztian@192.168.3.201"
+alias sshdc="ssh root@10.172.235.143"
+alias sshdv="ssh ikusr@10.25.97.162"
+alias sshi="expect ~/.sshi.exp"
+alias sshfs201="sshfs zztian@192.168.3.201:/sdc1/ ~/workspace/sshfs"
+alias sshfscrash="sshfs zztian@download.ikuai8.com:/crash_dump/ ~/workspace/bugs/"
+alias sshcrash="ssh zztian@58.221.58.100"
+export PATH=$PATH:/media/zhizhou/linux/openwrt/staging_dir/toolchain-mipsel_24kc_gcc-5.3.0_musl-1.1.16/bin/
