@@ -129,7 +129,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 
-alias croot="cd /media/zhizhou/linux/"
+alias crot="cd /home/zz/works/1_iKuai_Router3"
 alias sshzz="ssh zztian@192.168.3.201"
 alias sshdc="ssh root@10.172.235.143"
 alias sshdv="ssh ikusr@10.25.97.162"
@@ -137,4 +137,3 @@ alias sshi="expect ~/.sshi.exp"
 alias sshfs201="sshfs zztian@192.168.3.201:/sdc1/ ~/workspace/sshfs"
 alias sshfscrash="sshfs zztian@download.ikuai8.com:/crash_dump/ ~/workspace/bugs/"
 alias sshcrash="ssh zztian@58.221.58.100"
-export PATH=$PATH:/media/zhizhou/linux/openwrt/staging_dir/toolchain-mipsel_24kc_gcc-5.3.0_musl-1.1.16/bin/
