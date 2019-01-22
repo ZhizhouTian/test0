@@ -1,5 +1,5 @@
 set background=dark
-"set nu
+set nu
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
