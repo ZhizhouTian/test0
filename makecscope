@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CODEPATH=/home/zz/works/1_iKuai_Router3
+ROOT=$CODEPATH/iKuai_Router3
+OUTDIR=$CODEPATH/out
+mkdir -p $OUTDIR
+CSFILES=$OUTDIR/cscope.files
+make -C $ROOT/ik_3_18/linux-3.18.67 O=$OUTDIR cscope -j8
+find $ROOT/ik_codes/ -name "*.[c|h]" >> $CSFILES
+cd $OUTDIR
+cscope -b -f cscope.out
+cd -
