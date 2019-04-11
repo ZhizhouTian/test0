@@ -37,7 +37,7 @@ endif
 if has("cscope")
   set csprg=/usr/bin/cscope
   if filereadable("./out/cscope.out")
-    cscope add cscope.out
+    cscope add ./out/cscope.out
   endif
 endif
 
